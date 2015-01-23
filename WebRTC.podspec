@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-#s.homepage     = "http://EXAMPLE/WebRTC"
+  s.homepage     = "https://github.com/alex-5d0/WebRTC"
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Licensing your code is important. See http://choosealicense.com for more info.
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   s.author       = "alex-5d0"
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/alex-5d0/WebRTC.git" }
@@ -45,8 +45,8 @@ Pod::Spec.new do |s|
   s.source_files  = "headers/*.h"
   s.public_header_files = "headers/*.h"
 
-  s.preserve_path = "lib/.a"
-  s.vendored_libraries = "lib/.a"
+  s.preserve_path = "lib/libWebRTC-8049-ios-arm64_v8a-Release.a"
+  s.vendored_libraries = "lib/libWebRTC-8049-ios-arm64_v8a-Release.a"
 
   s.frameworks = "QuartzCore", "OpenGLES", "AudioToolbox", "AVFoundation", "CoreVideo", "Foundation", "UIKit", "CoreGraphics", "Security", "AssetsLibrary", "MobileCoreServices", "CoreLocation", "CoreMedia", "GLKit"
   s.libraries = "sqlite3", "stdc++", "System", "util"
